@@ -52,44 +52,48 @@ footer{
         justify-content: space-around;
     }
 }
-h1{
-    text-align: center;
-}
+
 main{
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-        section{
-            width: 100%;
+    .affichage{
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+            .articles{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 95%;
+                margin: auto;
+            }
+            .article{
+               background-color: rgb(20, 96, 134);
+               width: 30%;
+               text-align: center;
+               border-radius: 12px;
+               color: white;
+               margin: 10px;
+               transition: all 0.8s ease;
+           }
+           .article:hover{
+            background-color: rgb(133, 177, 198);
+            transform :scale(1.05);
+            text-align: center;
+            color: black;
         }
 
-        #titreh1{
+    }
+    .titreh1{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        }
-        .articles{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 95%;
-            margin: auto;
-        }
-        .article{
-           background-color: rgb(20, 96, 134);
-           width: 24%;
-           text-align: center;
-           border-radius: 12px;
-           color: white;
-           margin: 10px;
-           transition: all 0.8s ease;
-       }
-       .article:hover{
-        background-color: rgb(133, 177, 198);
-        transform :scale(1.05);
         text-align: center;
-        color: black;
+        }
+    .formulaire{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
     }
 
 }

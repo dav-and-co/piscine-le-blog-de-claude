@@ -2,30 +2,25 @@
          <!-- le git -->
          <!-- https://github.com/dav-and-co/piscine-le-blog-de-claude.git -->
 
-<!--  appel de config  -->
-<?php require_once('../config/config.php');
+<?php 
 
+// appel de l'accès aux données 
+require_once('../config/config.php');
+require_once('../model/articleRepository.php');
 
-// ouverture de la classe et retour du fichier conerné dans le tableau
-$Dbconnexion = new Dbconnexion();
-$pdo = $Dbconnexion -> connect();
+// class IndexController{
+//     public function index(){
+//         $ArticleRepository = new ArticleRepository();
+//         $articles = $ArticleRepository->findArticle();
+//         return $articles;
+//     }
+// }
+// $indexController = new IndexController();
+// $indexController -> index();
 
-// permet de faire une requête SELECT (lire les données du fichier product) sans parametres
-$stmt = $pdo->query("SELECT * FROM article");
+    $ArticleRepository = new ArticleRepository();
+    $articles = $ArticleRepository->findArticle();
 
-// retourne dans un tableau tous les produits 
-$articles =  $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-// appel de index post ouverture du fichier 
-require_once('../template/page/indexView.php'); 
-
-
-
-
-
-
-
-
-
-
-?>         
+ // appel de index post ouverture du fichier 
+ require_once('../template/page/indexView.php'); 
+?>
