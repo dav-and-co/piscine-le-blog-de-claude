@@ -6,6 +6,10 @@
 <?php require_once('../config/config.php');
 
 
+// ouverture de la classe et retour du fichier conerné dans le tableau
+$Dbconnexion = new Dbconnexion();
+$pdo = $Dbconnexion -> connect();
+
 // permet de faire une requête SELECT (lire les données du fichier product) sans parametres
 $stmt = $pdo->query("SELECT * FROM article");
 
