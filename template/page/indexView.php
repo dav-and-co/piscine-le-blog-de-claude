@@ -19,32 +19,7 @@
         </div>
     </section> 
 
-    <section class="formulaire">
-    <H1 class="titreh1">Saisie d'un nouvel article</H1>
-    <form  method="post">
-        <div>
-            <label > Titre
-            <input type="text" name="title">
-            </label>
-        </div>
-        <div>
-            <label > Contenu
-            <input type="text" name="content">
-            </label>
-        </div>
-        <div>
-            <label > date
-            <input type= date name="date">
-            </label>
-        </div>
-        <div>
-        <input type="submit" value="Ajouter cet article">
-        </div>
-    </form>
-
-      
-
-    </section>
+   
     
     
 </main>
