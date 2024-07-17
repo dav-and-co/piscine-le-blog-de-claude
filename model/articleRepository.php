@@ -14,7 +14,7 @@ class ArticleRepository {
     public function findArticle() {
 
         // permet de faire une requête SELECT (lire les données du fichier product) sans parametres
-        $stmt = $this->pdo->query("SELECT * FROM article");
+        $stmt = $this->pdo->query("SELECT * FROM article ORDER BY date DESC");
 
         // retourne dans un tableau tous les produits 
         $articles =  $stmt->fetchAll(PDO::FETCH_ASSOC);

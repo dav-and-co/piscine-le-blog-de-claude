@@ -1,10 +1,6 @@
 <!-- ouverture du header -->
 <?php require_once('../template/partial/header.php');?>
 
-<!-- <?php session_start();
-if (!isset($_SESSION['idlogged'])) { 
-header ("location:http://localhost/piscine-php-contact/views/connexion.php");
-    }?> -->
 
         <!-- formulaire de saisie des articles -->
 <main>
@@ -33,7 +29,15 @@ header ("location:http://localhost/piscine-php-contact/views/connexion.php");
         <?php
 
     // message de retour
-   
+    if (isRequestPost()) { 
+        if (empty(getFormErrors())) {
+            echo "<p>".$retourmsge."</p>";
+        } else {
+            foreach(getFormErrors() as $error) {
+                echo "<p>".$error."</p>";
+            }
+        }
+    } 
     ?>
     </section>
       

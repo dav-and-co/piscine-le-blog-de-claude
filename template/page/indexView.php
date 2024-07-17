@@ -18,11 +18,7 @@
             </div>
         </div>
     </section> 
-
-   
-    
-    
-</main>
+ </main>
 
  <!-- ouverture du footer -->  
 <?php require_once('../template//partial/footer.php');?>
