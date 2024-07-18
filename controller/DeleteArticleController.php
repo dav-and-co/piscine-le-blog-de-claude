@@ -11,10 +11,12 @@ class DeleteArticleController {
     require_once('../config/config.php');
     require_once('../model/articleRepository.php');
 
-      // dès réception d'un POST 
-      function isRequestPost() {
-        return $_SERVER["REQUEST_METHOD"] === "POST";
-      }
+
+
+          // dès réception d'un POST 
+          function isRequestPost() {
+            return $_SERVER["REQUEST_METHOD"] === "POST";
+          }
 
       if (isRequestPost()){
         $ArticleRepository = new ArticleRepository();
@@ -31,5 +33,6 @@ class DeleteArticleController {
 
   }
 }
+
 ?>
 

@@ -1,8 +1,7 @@
 <!-- http://localhost/piscine-php-contact/views/connexion.php -->
 
 <!-- appel de config et index.controleur  -->
-<?php require_once('../config/config.php');?>
-<?php require_once('../controller/connexion-Controller.php');?>
+
 <head>
     <html lang="fr">    
     <meta charset="UTF-8">
@@ -12,7 +11,7 @@
 <main>
     <div class="box">
         <div>
-            <img src="../assets/img/images (1).png" alt="">
+            <img src="../assets/img/image6.png" alt="">
         </div>
         <section>
             <H1>Connexion</H1>

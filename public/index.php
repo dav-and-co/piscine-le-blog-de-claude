@@ -29,9 +29,11 @@ if($uriend === "") {
 } else if ($uriend === "DeleteArticle") {
     $addArticleController = new DeleteArticleController();
     $addArticleController->DeleteArticle();
-} else if ($uriend === "DeleteArticle") {
+
+} else if ($uriend === "UpdateArticle") {
     $addArticleController = new UpdateArticleController();
     $addArticleController->UpdateArticle();
+
 }else {
     $indexController = new IndexController();
     $indexController->index();
