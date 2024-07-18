@@ -33,34 +33,10 @@
             <input class="marginput" type="submit" value="modifier cet article">
             </div>
         </form>
-        
-        
 
-
-
-
-
-
-
-
-
-
-
-
-        <?php
-        // message de retour
-        if (isRequestPost()) {
-            if ($retourmsge) {
-                echo "<p> Article supprimé avec succès !</p>";   
-            } else {
-                echo "<p> Echec de lla suppression de l'article !</p>"; 
-            }
-        } 
-        ?>
 
     </section>
   
-    
 </main>
 
  <!-- ouverture du footer -->  

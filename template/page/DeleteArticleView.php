@@ -40,7 +40,7 @@
             if ($retourmsge) {
                 echo "<p> Article supprimé avec succès !</p>";   
             } else {
-                echo "<p> Echec de lla suppression de l'article !</p>"; 
+                echo "<p> Echec de la suppression de l'article !</p>"; 
             }
         } 
         ?>

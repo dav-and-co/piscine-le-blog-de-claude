@@ -1,6 +1,6 @@
  
     <footer>
-    <img src="../public/img/image1.png" alt="">
+    <img src="../public/img/image5.png" alt="">
           
         <div>
             <ul>

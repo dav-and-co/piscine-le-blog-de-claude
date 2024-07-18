@@ -1,7 +1,7 @@
 <?php 
 require_once('../config/config.php');
 
-class ArticleRepository {
+class MDPeRepository {
 
     private $pdo;
 

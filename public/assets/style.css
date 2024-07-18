@@ -108,13 +108,19 @@ main{
     & .flexalign{
         display: flex ; 
         justify-content: space-between; 
+        transition: all 0.8s ease;
     }
-
-}
-
-article {
-    & p {
-        flex:1;
-        text-align:center;
+    & .flexalign:hover{
+        background-color: rgb(133, 177, 198);
+        transform :scale(1.02);
+        text-align: center;
+        color: black;
     }
+    & article {
+        & p {
+           flex:1;
+           text-align:center;
+       }
+   }
+
 }
