@@ -14,12 +14,12 @@
     <div>
     <h3>Le blog de la piscine</h3>
         <ul>
-            <li><a href="http://localhost/piscine-blog-1607/controller/indexController.php">articles</a></li>
-            <li><a href="http://localhost/piscine-blog-1607/controller/AddArticleController.php">saisie article</a></li> 
-            <li><a href="http://localhost/piscine-blog-1607/controller/DeleteArticleController.php">suppression d'un article</a></li> 
-            <li><a href="">à venir</a></li>
+            <li><a href="http://localhost/piscine-blog-1607/controller/indexController.php">liste des articles</a></li>
+            <li><a href="http://localhost/piscine-blog-1607/controller/AddArticleController.php">saisie d'un article</a></li> 
+            <li><a href="http://localhost/piscine-blog-1607/controller/UpdateArticleController.php">modification d'un article</a></li> 
+            <li><a href="http://localhost/piscine-blog-1607/controller/DeleteArticleController.php">suppression d'un article</a></li>
            
         </ul>
     </div>
-    <img src="../public/img/image.png" alt="">
+    <img src="../public/img/image3.png" alt="">
     </header>

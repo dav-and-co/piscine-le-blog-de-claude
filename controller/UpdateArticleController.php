@@ -1,4 +1,4 @@
-        <!-- http://localhost/piscine-blog-1607/controller/DeleteArticleController.php   -->
+        <!-- http://localhost/piscine-blog-1607/controller/UpdateArticleController.php   -->
          <!-- le git -->
          <!-- https://github.com/dav-and-co/piscine-le-blog-de-claude.git -->
 
@@ -14,17 +14,18 @@ require_once('../model/articleRepository.php');
   }
 
   if (isRequestPost()){
+    $method="WHERE `article`.`id` =".$_POST['modification'];
     $ArticleRepository = new ArticleRepository();
-    $retourmsge = $ArticleRepository->supprArticle($_POST['suppression']);
+    $retourmsge = $ArticleRepository->findArticle($method);
   }
 
 // appel des données de la table 
 $method="ORDER BY id";
- $ArticleRepository = new ArticleRepository();
+$ArticleRepository = new ArticleRepository();
 $articles = $ArticleRepository->findArticle($method);
 
 
  // appel de index post ouverture du fichier  
- require_once('../template/page/DeleteArticleView.php'); 
+ require_once('../template/page/UpdateArticleView.php'); 
 ?>
 

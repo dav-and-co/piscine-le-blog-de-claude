@@ -23,15 +23,19 @@
                 </label>
             </div>
             <div>
-            <input type="submit" value="Ajouter cet article">
+            <input class="marginput" type="submit" value="Ajouter cet article">
             </div>
         </form>
-        <?php
 
+        <?php
     // message de retour
     if (isRequestPost()) { 
         if (empty(getFormErrors())) {
-            echo "<p>".$retourmsge."</p>";
+            if ($retourmsge) {
+                echo "<p> Article ajouté avec succès !</p>";   
+            } else {
+                echo "<p> Echec de l'ajout de l'article !</p>"; 
+            }
         } else {
             foreach(getFormErrors() as $error) {
                 echo "<p>".$error."</p>";

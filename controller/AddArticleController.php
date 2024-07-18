@@ -15,7 +15,6 @@ require_once('../model/articleRepository.php');
  function isRequestPost() {
     return $_SERVER["REQUEST_METHOD"] === "POST";
 }
- 
 
     function getFormErrors() {
         $errors = [];

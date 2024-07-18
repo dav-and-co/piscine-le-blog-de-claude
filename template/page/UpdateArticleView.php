@@ -20,20 +20,33 @@
 
     </section>
     <section>
-         <!-- sélection de l'article à supprimer -->
-         <h1 class="titreh1">Indiquez le numéro de l'article à supprimer </h1>
+         <!-- sélection de l'article à modifier -->
+         <h1 class="titreh1">Indiquez le numéro de l'article à modifier </h1>
 
          <form  method="post">
             <div>
-                <label > Article à supprimer
-                <input type="text" name="suppression">
+                <label > Article à modifier
+                <input type="text" name="modification">
                 </label>
                 </div>
             <div>
-            <input class="marginput" type="submit" value="supprimer cet article">
+            <input class="marginput" type="submit" value="modifier cet article">
             </div>
         </form>
         
+        
+
+
+
+
+
+
+
+
+
+
+
+
         <?php
         // message de retour
         if (isRequestPost()) {

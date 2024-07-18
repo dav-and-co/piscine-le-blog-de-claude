@@ -11,10 +11,10 @@ class ArticleRepository {
         $this->pdo = $Dbconnexion -> connect();
     }
 
-    public function findArticle() {
+    public function findArticle($method) {
 
         // permet de faire une requête SELECT (lire les données du fichier product) sans parametres
-        $stmt = $this->pdo->query("SELECT * FROM article ORDER BY date DESC");
+        $stmt = $this->pdo->query("SELECT * FROM article ".$method);
 
         // retourne dans un tableau tous les produits 
         $articles =  $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -31,13 +31,18 @@ class ArticleRepository {
         $stmt->bindParam(':date', $date);
     
         // Exécuter la requête et message de retour
-        if ($stmt->execute()) {
-            $result = "Nouveau produit ajouté avec succès";
-        } else {
-            $result = "Erreur lors de l'ajout du produit";
-        }
-        return $result;
-        }
+        return ($stmt->execute());
+    }
+
+    public function supprArticle($id) {
+         // Préparer la requête de suppression de la table  
+         $sql = "DELETE FROM article WHERE `article`.`id` =".$id;
+        $stmt = $this->pdo->prepare($sql); 
+        
+        // Exécuter la requête et message de retour
+        return ($stmt->execute());
+    }
+
 }
 
 
